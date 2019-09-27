@@ -1,24 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Genre Button Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GenreButtonScreenViewController" customModule="MusicPlayrer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="tpO-vz-Ajf">
+                                <rect key="frame" x="77" y="248" width="260" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="di1-Bb-Zxs">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="60"/>
+                                        <color key="backgroundColor" red="0.26947862263372335" green="0.38781300950793085" blue="1" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="dTR-b2-Xxr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Jazz"/>
+                                        <connections>
+                                            <action selector="genreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O5k-S9-Jbo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIK-l0-eTr">
+                                        <rect key="frame" x="0.0" y="120" width="260" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.75566280257791973" blue="0.34702698861606618" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Kgk-Rf-gwl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Holiday"/>
+                                        <connections>
+                                            <action selector="genreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hmV-7c-yvZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypi-vu-tAv">
+                                        <rect key="frame" x="0.0" y="240" width="260" height="60"/>
+                                        <color key="backgroundColor" red="0.66974113482438669" green="0.31804449070023233" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="0tM-CZ-s8a"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Electronic"/>
+                                        <connections>
+                                            <action selector="genreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yPg-oG-hov"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="IDo-ig-QRp"/>
+                                    <constraint firstAttribute="width" constant="260" id="ZJC-ts-19R"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="dIm-Qp-h9e"/>
+                                    <constraint firstAttribute="height" constant="300" id="pNs-nb-603"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELz-Sk-CpP">
+                                <rect key="frame" x="77" y="618" width="120" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.18142545090000001" blue="0.0" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="RbE-EL-Vfv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="WIl-o8-SYR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XVy-84-UcL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuI-4o-qsx">
+                                <rect key="frame" x="217" y="618" width="120" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Bsx-hn-aFk"/>
+                                    <constraint firstAttribute="height" constant="60" id="eQp-nB-a98"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <color key="tintColor" red="0.2694786226" green="0.38781300950000003" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ffN-XH-8bS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ELz-Sk-CpP" firstAttribute="top" secondItem="tpO-vz-Ajf" secondAttribute="bottom" constant="70" id="88Z-BB-W9s"/>
+                            <constraint firstItem="fuI-4o-qsx" firstAttribute="trailing" secondItem="tpO-vz-Ajf" secondAttribute="trailing" id="ADa-jy-6WB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ELz-Sk-CpP" secondAttribute="trailing" symbolic="YES" id="Mpk-li-oDU"/>
+                            <constraint firstItem="ELz-Sk-CpP" firstAttribute="leading" secondItem="tpO-vz-Ajf" secondAttribute="leading" id="NzJ-wS-iwy"/>
+                            <constraint firstItem="fuI-4o-qsx" firstAttribute="centerY" secondItem="ELz-Sk-CpP" secondAttribute="centerY" id="PNh-SH-a8C"/>
+                            <constraint firstItem="fuI-4o-qsx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ELz-Sk-CpP" secondAttribute="trailing" constant="8" symbolic="YES" id="Vsn-WV-fjI"/>
+                            <constraint firstItem="tpO-vz-Ajf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="cIS-yx-k40"/>
+                            <constraint firstItem="tpO-vz-Ajf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gPU-XB-UB2"/>
+                            <constraint firstItem="tpO-vz-Ajf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l9t-tJ-dQc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
         </scene>
     </scenes>
 </document>

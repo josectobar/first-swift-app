@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		FE24CFEB232F2FEC000DB8B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24CFEA232F2FEC000DB8B4 /* AppDelegate.swift */; };
-		FE24CFED232F2FEC000DB8B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24CFEC232F2FEC000DB8B4 /* ViewController.swift */; };
 		FE24CFF0232F2FEC000DB8B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE24CFEE232F2FEC000DB8B4 /* Main.storyboard */; };
 		FE24CFF2232F2FED000DB8B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE24CFF1232F2FED000DB8B4 /* Assets.xcassets */; };
 		FE24CFF5232F2FED000DB8B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE24CFF3232F2FED000DB8B4 /* LaunchScreen.storyboard */; };
+		FE24CFFD232F30E4000DB8B4 /* GenreButtonScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24CFFC232F30E4000DB8B4 /* GenreButtonScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FE24CFE7232F2FEC000DB8B4 /* MusicPlayrer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayrer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE24CFEA232F2FEC000DB8B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE24CFEC232F2FEC000DB8B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FE24CFEF232F2FEC000DB8B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE24CFF1232F2FED000DB8B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE24CFF4232F2FED000DB8B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE24CFF6232F2FED000DB8B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE24CFFC232F30E4000DB8B4 /* GenreButtonScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButtonScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				FE24CFEA232F2FEC000DB8B4 /* AppDelegate.swift */,
-				FE24CFEC232F2FEC000DB8B4 /* ViewController.swift */,
+				FE24CFFC232F30E4000DB8B4 /* GenreButtonScreenViewController.swift */,
 				FE24CFEE232F2FEC000DB8B4 /* Main.storyboard */,
 				FE24CFF1232F2FED000DB8B4 /* Assets.xcassets */,
 				FE24CFF3232F2FED000DB8B4 /* LaunchScreen.storyboard */,
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE24CFED232F2FEC000DB8B4 /* ViewController.swift in Sources */,
+				FE24CFFD232F30E4000DB8B4 /* GenreButtonScreenViewController.swift in Sources */,
 				FE24CFEB232F2FEC000DB8B4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
